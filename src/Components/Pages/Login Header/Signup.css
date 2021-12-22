@@ -1,0 +1,116 @@
+.box-shadow {
+  box-shadow: -1px 3px 12px 0px #80808038;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.bggroup {
+  position: absolute;
+  top: 12%;
+}
+
+.Bgshade {
+  position: absolute;
+  bottom: 14.3%;
+  right: 0;
+}
+.Bgimage {
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+}
+
+.heading,
+.heading1 {
+  /* font-family: Gilroy; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  color: #001a40;
+}
+
+.heading1,
+.clr-green {
+  color: #2adc65;
+}
+
+.mt-10 {
+  margin-top: 10%;
+}
+
+.mt-7 {
+  margin-top: 7%;
+}
+
+.para {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  color: #303640;
+}
+
+.input1 {
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 0px 11px 2px #80808047;
+}
+
+.btn-r {
+  border-radius: 30px;
+}
+
+.signup-btn {
+  background-color: #001a40;
+  border: none;
+}
+
+.btn-bg-green {
+  background-color: #2adc65;
+  border: none;
+}
+
+.border-dot {
+  border-bottom: dotted;
+  text-decoration: none;
+}
+
+.btn-p {
+  left: 34%;
+}
+
+.paraC {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.logoimg {
+  width: 12vw;
+}
+
+.himail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #303640;
+}
+
+.box{
+  box-shadow: 1px 1px 1px 1px grey;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
