@@ -63,6 +63,18 @@
   border-radius: 30px;
 }
 
+.g-btn {
+  background-color: #2adc65;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
 .signup-btn {
   background-color: #001a40;
   border: none;
@@ -109,8 +121,93 @@
   color: #303640;
 }
 
-.box{
-  box-shadow: 1px 1px 1px 1px grey;
+.box {
+  box-shadow: 0px 0px 10px 0px #80808057;
+  border: 1px solid #cccccc85;
+  border-radius: 15px;
+}
+
+.font-w-100 {
+  font-weight: 400;
+}
+
+.click-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2adc65;
+}
+
+.d-data {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  color: #303640;
+}
+
+.signup-frm-input {
+  border-radius: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+}
+
+.signup-frm-input::placeholder {
+  color: rgb(83, 83, 83);
+  font-weight: 500;
+}
+
+.para-signupnext3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #303640;
+}
+
+.para1-signupnext3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #303640;
+}
+
+.sgnpnxt3-mail-lnk {
+  color: #303640;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sgnpnxt3-lnk {
+  color: #2adc65;
+  text-decoration: none;
+}
+
+.name-men {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #303640;
+}
+
+.para1-signupnext4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #303640;
+}
+
+.sgnpnxt4-lnk {
+  color: #2adc65;
+  text-decoration: none;
+  font-weight: 500;
 }
