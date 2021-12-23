@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../../Assets/Logo1.png";
+import "../Login Header/Signup.css";
 
 const Signupnext4 = () => {
   return (
@@ -49,6 +50,20 @@ const Signupnext4 = () => {
           <a href="" className="click-link">
             Sign Up.
           </a>
+        </div>
+        <div>
+          <select name="lang-drop" id="Lang-drpdwn" className="ovrflw px-2 py-2 mt-3 clr-grey ">
+            <option value="0">English</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+            <option value="1">Urdu</option>
+          </select>
         </div>
       </div>
     </div>
