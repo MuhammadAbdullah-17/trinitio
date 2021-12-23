@@ -211,3 +211,69 @@
   text-decoration: none;
   font-weight: 500;
 }
+
+.ovrflw {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.clr-grey {
+  color: rgb(110, 107, 107);
+}
+
+#Lang-drpdwn {
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#Lang-drpdwn:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.box-b {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #edfaf2;
+}
+
+.wlcm-txt {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 32px;
+  color: #001a40;
+}
+
+.clr-grn {
+  color: #2adc65;
+}
+
+.crt-url {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #001a40;
+}
+
+.crt-p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 29px;
+  color: #303640;
+}
+
+.pgname {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #303640;
+}
