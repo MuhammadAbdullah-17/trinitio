@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+body {
+  font-family: Gilroy;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: 'Gilroy-Light', sans-serif;
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
