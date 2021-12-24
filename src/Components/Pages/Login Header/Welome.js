@@ -2,13 +2,14 @@ import React from "react";
 import Logo from "../../../Assets/Logo1.png";
 import WelcomeImg from "../../../Assets/welcome-back1.png";
 import Timezone from "./TimeZone.jsx";
+import Points from "../../../Assets/Group538.png";
 
 const Welcome = () => {
   return (
     <div className="mx-auto">
       <div className="mt-7">
         <img src={Logo} alt="" className="logoimg" />
-        <div className="col-4 mx-auto mt-5">
+        <div className="box-brdr col-4 mx-auto mt-5">
           <div className="box-b row mx-auto px-3 py-4">
             <div className="col-2">
               <img src={WelcomeImg} alt="" />
@@ -46,9 +47,31 @@ const Welcome = () => {
             </div>
           </div>
           <hr className="col-12" />
-          <div className="bg-white align-left px-5 py-4">
-            <label htmlFor="">Time Zone</label>
+          <div className="bg-white align-left px-5 py-4 box-btm">
+            <label htmlFor="" className="wlcm-tm-zn">
+              Time Zone
+            </label>
+            <div className="col-12 mt-3"></div>
             <Timezone />
+          </div>
+        </div>
+        <div className="col-4 mx-auto mt-5">
+          <div className="row">
+            <div className="col-3">
+              <img src={Points} alt="" />
+            </div>
+            <div className="col align-right">
+              <a href="">
+                <button className="set-btn px-3 col-4 py-2 bg-white">
+                  Set Up Later
+                </button>
+              </a>
+              <a href="">
+                <button className="set-btn bg-green text-white col-4 px-3 py-2 mx-3">
+                  Continue
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
