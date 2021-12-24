@@ -299,12 +299,13 @@ class Timezone extends React.Component {
 
     return (
       <div className={containerClasses} style={style}>
-        <div className="timezone-picker-textfield">
+        <div className="timezone-picker-textfield feild-w">
           <FormControl
             onBlur={this.handleBlur}
             onChange={this.handleFilterChange}
             onFocus={this.handleFocus}
             disabled={disabled}
+            className="px-2 py-3"
             onKeyDown={this.handleKeyPress}
             placeholder={placeholder}
             ref={(c) => {
