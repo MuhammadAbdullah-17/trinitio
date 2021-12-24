@@ -259,6 +259,14 @@
   line-height: 32px;
   color: #001a40;
 }
+.cnct-email {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #001a40;
+}
 
 .crt-p {
   font-family: Gilroy;
@@ -276,4 +284,90 @@
   font-size: 16px;
   line-height: 19px;
   color: #303640;
+}
+
+.wlcm-tm-zn {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #001a40;
+}
+
+.box-brdr {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 12px #ccc;
+}
+
+.box-btm {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.set-btn {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 0px 20px 3px #ccc;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  text-align: center;
+
+  color: #606c80;
+}
+
+.bg-green {
+  background-color: #2adc65;
+}
+
+.bg-blue {
+  background-color: #edfaf2;
+}
+
+.brdr-grey {
+  border: 1px solid #ccc;
+}
+
+.chck-email {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 29px;
+  color: #303640;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.cntnue-wo-btn {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(96, 108, 128, 0.7);
+  text-decoration: none;
+}
+
+.avl-hours {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #001a40;
+}
+
+.time-input {
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
