@@ -1,7 +1,8 @@
 .timezone-picker {
     display: inline-block;
     font: 13px sans-serif;
-    position: relative
+    position: relative;
+    width: fit-content;
 }
 
 .timezone-picker-textfield input {
@@ -56,4 +57,14 @@
 
 .timezone-picker-selected .timezone-picker-textfield input {
     color: #474747
+}
+
+.feild-w {
+    width: 30vw;
+    border-radius: 15px;
+}
+
+.feild-w input {
+    border-radius: 10px;
+    border: 1px solid #b6b5b5;
 }
