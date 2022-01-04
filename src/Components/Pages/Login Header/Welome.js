@@ -3,12 +3,15 @@ import Logo from "../../../Assets/Logo1.png";
 import WelcomeImg from "../../../Assets/welcome-back1.png";
 import Timezone from "./TimeZone.jsx";
 import Points from "../../../Assets/Group538.png";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
     <div className="mx-auto">
       <div className="mt-7">
-        <img src={Logo} alt="" className="logoimg" />
+        <div className="mx-auto text-center">
+          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+        </div>
         <div className="box-brdr col-4 mx-auto mt-5">
           <div className="box-b row mx-auto px-3 py-4">
             <div className="col-2">
@@ -24,7 +27,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white align-left px-5 py-4">
+          <div className="bg-white align-left px-4 py-4">
             <div className="crt-url">Create your PageSpeedy URL</div>
             <div className="crt-p mt-2">
               Choose a URL that describes you or your business in a concise way.
@@ -35,12 +38,12 @@ const Welcome = () => {
               <label htmlFor="" className="col-3 pgname mt-2">
                 Pagespeedy.com/
               </label>
-              <div className="col mx-auto">
+              <div className="col-8 mx-auto">
                 <input
                   type="text"
                   name="johndoe12"
                   placeholder="johndoe12"
-                  className="col-12 px-3 py-2 mx-3 my-0 signup-frm-input pgname"
+                  className="col-12 px-3 py-2 mx-2 my-0 signup-frm-input pgname"
                   required
                 />
               </div>
@@ -66,11 +69,11 @@ const Welcome = () => {
                   Set Up Later
                 </button>
               </a>
-              <a href="">
+              <Link to="/Calender">
                 <button className="set-btn bg-green text-white col-4 px-3 py-2 mx-3">
                   Continue
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

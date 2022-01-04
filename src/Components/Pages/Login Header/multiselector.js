@@ -1,183 +1,94 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../../Assets/Logo1.png";
 import ClockImg from "../../../Assets/clock1.png";
 import Points from "../../../Assets/Group541.png";
+import "./multiselector.css";
 
 const Dayselector = () => {
-    "#search".on("keyup", function () {
-      var pattern = $(this).val();
-      ".items-collection .items".hide();
-      ".items-collection .items"
-        .filter(function () {
-          return $(this).text().match(new RegExp(pattern, "i"));
-        })
-        .show();
-    });
+  const [isActiveSun, setActiveSun] = useState("false");
+  const handleToggleSun = () => {
+    setActiveSun(!isActiveSun);
+  };
+  const [isActiveMon, setActiveMon] = useState("false");
+  const handleToggleMon = () => {
+    setActiveMon(!isActiveMon);
+  };
+  const [isActiveTue, setActiveTue] = useState("false");
+  const handleToggleTue = () => {
+    setActiveTue(!isActiveTue);
+  };
+  const [isActiveWed, setActiveWed] = useState("false");
+  const handleToggleWed = () => {
+    setActiveWed(!isActiveWed);
+  };
+  const [isActiveThu, setActiveThu] = useState("false");
+  const handleToggleThu = () => {
+    setActiveThu(!isActiveThu);
+  };
+  const [isActiveFri, setActiveFri] = useState("false");
+  const handleToggleFri = () => {
+    setActiveFri(!isActiveFri);
+  };
+  const [isActiveSat, setActiveSat] = useState("false");
+  const handleToggleSat = () => {
+    setActiveSat(!isActiveSat);
+  };
   return (
-    <div className="container">
-      <h2>Multiple items selector with filter</h2>
-      <div className="row">
-        <div className="form-group">
-          <div className="items-collection">
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group bizmoduleselect">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-car fa-2x"></span>
-                      <h5>car</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group itemcontent">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-truck fa-2x"></span>
-                      <h5>truck</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group itemcontent">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-laptop fa-2x"></span>
-                      <h5>laptop</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group itemcontent">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-cube fa-2x"></span>
-                      <h5>cube</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group itemcontent">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-lock fa-2x"></span>
-                      <h5>secure</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group itemcontent">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-barcode fa-2x"></span>
-                      <h5>barcode</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group itemcontent">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-key fa-2x"></span>
-                      <h5>key</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div className="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
-              <div className="info-block block-info clearfix">
-                <div data-toggle="buttons" className="btn-group itemcontent">
-                  <label className="btn btn-default">
-                    <div className="itemcontent">
-                      <input
-                        type="checkbox"
-                        name="var_id[]"
-                        autocomplete="off"
-                        value=""
-                      />
-                      <span className="fa fa-keyboard-o fa-2x"></span>
-                      <h5>keyboard</h5>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="row">
+      <div className="col px-0 mx-auto">
+        <div
+          className={isActiveSun ? "dayb mx-1 px-2 py-2 text-center" : "dayb-A text-center px-2 py-2 mx-1"}
+          onClick={handleToggleSun}
+        >
+          Sun
         </div>
       </div>
-      <div className="row">
-        <br />
-        <div className="form-group">
-          <div className="col-sm-12 col-md-12 col-lg-12">
-            <i className="fa fa-search fa-2x pull-left searchicon"></i>
-            <input
-              type="search"
-              className="form-control"
-              id="search"
-              placeholder="Filter items..."
-            />
-          </div>
+      <div className="col px-0 mx-auto">
+        <div
+          className={isActiveMon ? "dayb mx-1 px-2 py-2 text-center" : "dayb-A text-center px-2 py-2 mx-1"}
+          onClick={handleToggleMon}
+        >
+          Mon
+        </div>
+      </div>
+      <div className="col px-0 mx-auto">
+        <div
+          className={isActiveTue ? "dayb mx-1 px-2 py-2 text-center" : "dayb-A text-center px-2 py-2 mx-1"}
+          onClick={handleToggleTue}
+        >
+          Tue
+        </div>
+      </div>
+      <div className="col px-0 mx-auto">
+        <div
+          className={isActiveWed ? "dayb mx-1 px-2 py-2 text-center" : "dayb-A text-center px-2 py-2 mx-1"}
+          onClick={handleToggleWed}
+        >
+          Wed
+        </div>
+      </div>
+      <div className="col px-0 mx-auto">
+        <div
+          className={isActiveThu ? "dayb mx-1 px-2 py-2 text-center" : "dayb-A text-center px-2 py-2 mx-1"}
+          onClick={handleToggleThu}
+        >
+          Thu
+        </div>
+      </div>
+      <div className="col px-0 mx-auto">
+        <div
+          className={isActiveFri ? "dayb mx-1 px-2 py-2 text-center" : "dayb-A text-center px-2 py-2 mx-1"}
+          onClick={handleToggleFri}
+        >
+          Fri
+        </div>
+      </div>
+      <div className="col px-0 mx-auto">
+        <div
+          className={isActiveSat ? "dayb mx-1 px-2 py-2 text-center" : "dayb-A text-center px-2 py-2 mx-1"}
+          onClick={handleToggleSat}
+        >
+          Sat
         </div>
       </div>
     </div>

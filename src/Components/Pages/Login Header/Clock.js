@@ -3,12 +3,15 @@ import Logo from "../../../Assets/Logo1.png";
 import ClockImg from "../../../Assets/clock1.png";
 import Points from "../../../Assets/Group541.png";
 import Dayselector from "./multiselector";
+import { Link } from "react-router-dom";
 
 const Clock = () => {
   return (
     <div className="mx-auto">
       <div className="mt-7">
-        <img src={Logo} alt="" className="logoimg" />
+        <div className="mx-auto text-center">
+          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+        </div>
         <div className="box-brdr col-4 mx-auto mt-5">
           <div className="box-b row mx-auto px-3 py-4">
             <div className="col-2 mt-1">
@@ -41,7 +44,7 @@ const Clock = () => {
             <div className="avl-hours">Available Hours</div>
             <Dayselector />
           </div>
-          <div className="mx-auto">
+          <div className="mx-auto text-center px-5 mb-2">
             Don’t worry! You’ll be able to further customize your availability
             later on.
           </div>
@@ -57,11 +60,11 @@ const Clock = () => {
                   Set Up Later
                 </button>
               </a>
-              <a href="">
+              <Link to="/Personalize">
                 <button className="set-btn bg-green text-white col-4 px-3 py-2 mx-3">
                   Continue
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

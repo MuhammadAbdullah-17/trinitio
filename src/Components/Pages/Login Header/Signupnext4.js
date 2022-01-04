@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../../Assets/Logo1.png";
 import "../Login Header/Signup.css";
 
@@ -6,7 +7,9 @@ const Signupnext4 = () => {
   return (
     <div className="mx-auto">
       <div className="mt-7">
-        <img src={Logo} alt="" className="logoimg" />
+        <div className="mx-auto text-center">
+          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+        </div>
         <div className="mt-5 name-men">John,</div>
         <div className="mx-auto col-4 d-data para1-signupnext4">
           Thank you for confirming your email address, &nbsp;
@@ -33,9 +36,15 @@ const Signupnext4 = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                className="col-12 px-3 py-2 mt-2 mx-auto signup-frm-input"
+                className="col-12 px-3 py-2 mt-2 mb-4 mx-auto signup-frm-input"
               />
-              <button className="btn-r col-12 mt-5 py-3 g-btn">Continue</button>
+              <Link to="/Welcome" className="">
+                <button
+                  className="btn-r col-12 mt-2 py-3 px-5 g-btn"
+                >
+                  Continue
+                </button>
+              </Link>
             </form>
           </div>
         </div>
@@ -52,7 +61,11 @@ const Signupnext4 = () => {
           </a>
         </div>
         <div>
-          <select name="lang-drop" id="Lang-drpdwn" className="ovrflw px-2 py-2 mt-3 clr-grey ">
+          <select
+            name="lang-drop"
+            id="Lang-drpdwn"
+            className="ovrflw px-2 py-2 mt-3 clr-grey "
+          >
             <option value="0">English</option>
             <option value="1">Urdu</option>
             <option value="1">Urdu</option>

@@ -13,13 +13,24 @@
 
 .Bgshade {
   position: absolute;
-  bottom: 14.3%;
-  right: 0;
+  bottom: 14%;
+  right: 46px;
+  width: 54vw;
+  height: 51.6vh;
+}
+.Bgshade > img {
+  width: 57vw;
 }
 .Bgimage {
   position: absolute;
   bottom: 25%;
-  right: 10%;
+  right: 8%;
+  width: 39vw;
+  height: 56vh;
+}
+
+.Bgimage > img {
+  width: 29vw;
 }
 
 .heading,
@@ -38,7 +49,7 @@
 }
 
 .mt-10 {
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 .mt-7 {
@@ -68,8 +79,8 @@
   border: none;
   font-style: normal;
   font-weight: bold;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 10px;
   /* identical to box height */
 
   color: #ffffff;
@@ -91,7 +102,7 @@
 }
 
 .btn-p {
-  left: 34%;
+  left: 29%;
 }
 
 .paraC {
@@ -237,12 +248,34 @@
   border-top-left-radius: 10px;
   background-color: #edfaf2;
 }
+.box-w {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #edfaf2;
+}
+
+.form-check-input:checked {
+  border-color: #2adc65;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 0px white;
+  /* background-image: url("../../../Assets/Vector.png"); */
+}
+.form-check-input:active {
+  border-color: #2adc65;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 0px white;
+  /* background-image: url("../../../Assets/Vector.png"); */
+}
+
+.form-check-input:checked[type=radio] {
+  background-image: url("../../../Assets/Vector.png");
+}
 
 .wlcm-txt {
   font-family: Gilroy;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 21px;
   line-height: 32px;
   color: #001a40;
 }
@@ -263,7 +296,7 @@
   font-family: Gilroy;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   color: #001a40;
 }
@@ -338,7 +371,7 @@
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 29px;
   color: #303640;
 }

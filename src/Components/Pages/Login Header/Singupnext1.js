@@ -1,11 +1,14 @@
 import React from "react";
 import Logo from "../../../Assets/Logo1.png";
+import { Link } from "react-router-dom";
 
 const Singupnext = () => {
   return (
     <div className="mx-auto">
       <div className="mt-7">
-        <img src={Logo} alt="" className="logoimg" />
+        <div className="mx-auto text-center">
+          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+        </div>
         <div className="himail mt-3">Hi johndoe@gmail.com!</div>
         <div className="box col-3 mx-auto mt-4 py-5">
           <div className="px-3">
@@ -14,7 +17,7 @@ const Singupnext = () => {
               automatically connect your calendar so you can start using
               Calendly right away!
             </p>
-            <div className="row px-0 my-5">
+            <div className="row px-0 my-4">
               <div className="col  d-flex">
                 <button className="btn-r g-btn py-3 px-3 text-white">
                   <i class="fab fa-google"></i>&nbsp; Sign up with Google
@@ -32,15 +35,20 @@ const Singupnext = () => {
             Prefer to create an account with a password?
           </div>
           <div className="px-3 align-left ">
-            <a href="" className="click-link">
+            <Link to="/Signupnext2" className="click-link">
               Click Here
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mx-auto col-3 px-3 d-data mt-3">
           By creting a Pagespeedy account, you agree to &nbsp;
-          <a href="" className="click-link">Pagespeedy’s Term</a>&nbsp; and
-          &nbsp;<a href="" className="click-link">Privacy Policy</a>
+          <a href="" className="click-link">
+            Pagespeedy’s Term
+          </a>
+          &nbsp; and &nbsp;
+          <a href="" className="click-link">
+            Privacy Policy
+          </a>
         </div>
       </div>
     </div>

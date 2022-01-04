@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../../Assets/Logo1.png";
 
 const Signupnext2 = () => {
   return (
     <div className="mx-auto">
       <div className="mt-7">
-        <img src={Logo} alt="" className="logoimg" />
+        <div className="mx-auto text-center">
+          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+        </div>
         <div className="himail mt-3">Sign Up with Pagespeedy for free.</div>
         <div className="box col-3 mx-auto mt-4 py-5">
           <div className="px-4">
@@ -24,7 +27,8 @@ const Signupnext2 = () => {
                 type="text"
                 name="full name"
                 placeholder="John Doe"
-                className="col-12 px-3 py-2 mt-2 mx-auto signup-frm-input" required
+                className="col-12 px-3 py-2 mt-2 mx-auto signup-frm-input"
+                required
               />
               <label htmlFor="" className="mt-4">
                 Choose a password with at least 8 characters
@@ -35,7 +39,11 @@ const Signupnext2 = () => {
                 placeholder="Password"
                 className="col-12 px-3 py-2 mt-2 mx-auto signup-frm-input"
               />
-              <button className="btn-r col-12 mt-5 py-3 g-btn">Continue</button>
+              <Link to="/Signupnext3">
+                <button className="btn-r col-12 mt-5 py-3 g-btn">
+                  Continue
+                </button>
+              </Link>
             </form>
           </div>
         </div>
