@@ -16,20 +16,11 @@ import Signupnext4 from "./Components/Pages/Login Header/Signupnext4";
 import Singupnext1 from "./Components/Pages/Login Header/Singupnext1";
 import Welcome from "./Components/Pages/Login Header/Welome";
 import Personalize from "./Components/Pages/Login Header/Personalize";
+import Dashboard from "./Components/Pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <Router>
-      {/* <SignUp /> */}
-      {/* <Singupnext1/> */}
-      {/* <Signupnext2 /> */}
-      {/* <Signupnext3 /> */}
-      {/* <Signupnext4 /> */}
-      {/* <Welcome /> */}
-      {/* <Calender /> */}
-      {/* <Calender1 /> */}
-      {/* <Clock /> */}
-
       <Switch>
         <Route exact path="/" component={SignUp} />
         <Route path="/Signup" component={Singupnext1} />
@@ -41,6 +32,7 @@ function App() {
         <Route path="/Calender1" component={Calender1} />
         <Route path="/Clock" component={Clock} />
         <Route path="/Personalize" component={Personalize} />
+        <Route path="/Dashboard" component={Dashboard} />
       </Switch>
     </Router>
   );
