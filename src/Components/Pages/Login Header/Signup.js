@@ -44,6 +44,7 @@ function SignUp() {
               name="email"
               placeholder="Enter your email"
               className="input1 px-3 py-3 w-100"
+              required={true}
             />
             <Link to="/Signup"
               // onSubmit={handleSubmit}
