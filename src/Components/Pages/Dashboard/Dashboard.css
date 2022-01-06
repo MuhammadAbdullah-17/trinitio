@@ -1,0 +1,103 @@
+.bg-blk {
+  background-color: #37474f;
+}
+
+.brdr-r-10 {
+  border-radius: 10px;
+}
+
+.txt-g {
+  color: #858585;
+  padding: 2px;
+}
+
+.brdr {
+  border: 1px solid #636363;
+  box-shadow: 0px 0px 20px 2px inset #6363634d;
+}
+
+.text-num {
+  border-radius: 30px;
+  font-size: 13px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  right: 12%;
+  top: 9.2%;
+  background-color: #ff9580;
+}
+
+.fakeclass {
+  width: 100vw;
+}
+
+/* Sidebar */
+
+.side-icon {
+  font-size: 1.2rem;
+}
+
+.side-right {
+  position: absolute;
+  left: 0%;
+  display: flex;
+  height: 100vh;
+  overflow: scroll initial;
+}
+
+.head-div {
+  padding: 24px 18px;
+}
+
+.head-div > .toggled {
+  padding: 24px 32px !important;
+}
+
+.konzrO > .toggled {
+  padding: 24px 29px !important;
+}
+
+.konzrO .head-div .icon-suffix {
+  margin: 0px 7px;
+  cursor: pointer;
+}
+
+.konzrO .head-div .head-text {
+  margin: 0px 0px;
+}
+
+.haurBG {
+  height: 100%;
+  position: relative;
+  z-index: 101;
+  background-color: #202b30;
+}
+
+.hYdpPE {
+  list-style: none;
+  /* margin: 10px 15px; */
+}
+
+.eaAca-d .activeClicked > li {
+  background: transparent !important;
+  color: green !important;
+  border-left: 3px solid green;
+}
+
+.hYdpPE {
+  list-style: none;
+  margin: 0px !important;
+}
+
+
+/* Dashboard */
+.f-hello {
+  font-size: 100rem;
+}
+
+.bg-grey {
+  background-color: #E5E5E5;
+}
+
+.brdr-r-5 {
+  border-radius: 10px;
+}
