@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../../Assets/Logo1.png";
 import ClockImg from "../../../Assets/development1.png";
 import Points from "../../../Assets/Group542.png";
+import { Link } from "react-router-dom";
 
 const Personalize = () => {
   return (
@@ -120,11 +121,11 @@ const Personalize = () => {
               <img src={Points} alt="" />
             </div>
             <div className="col align-right">
-              <a href="">
+              <Link to="/Dashboard">
                 <button className="set-btn bg-green text-white col-4 px-3 py-2 mx-3">
                   Finish
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
