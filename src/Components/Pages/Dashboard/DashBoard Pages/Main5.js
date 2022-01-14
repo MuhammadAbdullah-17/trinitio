@@ -9,7 +9,7 @@ import Cancelbtn from "../../../../Assets/Cancel.png";
 import Cancelbtnb from "../../../../Assets/cancelb.png";
 import Cancelbtnp from "../../../../Assets/Cancelp.png";
 
-const Main2 = () => {
+const Main5 = () => {
   const [show, setShow] = useState(false);
   const [hide1, setHide1] = useState(true);
   const [hide2, setHide2] = useState(true);
@@ -18,91 +18,57 @@ const Main2 = () => {
   const [hide5, setHide5] = useState(true);
   const [hide6, setHide6] = useState(true);
   return (
-    <div className="col-10 float-right bg-grey pgstup">
+    <div className="col-10 float-right bg-grey pgstup mx-auto">
       <div className="row mx-auto mt-5">
-        <div className="col-3 ml-5 mr-3 p-3 brdr-r-5 brdr-g bg-white mngusr">
-          <h4>Manage Users</h4>
-          <p className="Aff-p mt-3">
-            Invite others and give them access to areas relevant to their work.
-          </p>
-          <a href="">Learn More</a>
-          <button className="btn-r col-12 mt-4 Aff-btn py-3 g-btn">
-            Invite Member
-          </button>
-          <p className="bold mt-4">OWNER</p>
-          <div className="d-flex mx-2">
-            <img src={OwnerPic} alt="" />
-            <p className="mx-3 mt-1">John Ravi</p>
-          </div>
-          <hr />
-          <p className="bold mt-4">INVITES SENT</p>
-          <div className="d-flex mx-2">
-            <img src={OwnerPic} alt="" />
-            <p className="mx-3 mb-0 py-0">
-              Kalai <small className="d-block">Scheduling Administrator</small>
-            </p>
-          </div>
-          <hr />
-          <p className="bold mt-4">ADDED USERS</p>
-          <div className="d-flex mx-2">
-            <img src={OwnerPic} alt="" />
-            <p className="mx-3 mb-0 py-0">
-              Joanna Finch{" "}
-              <small className="d-block">Scheduling Administrator</small>
-            </p>
-          </div>
-          <div className="d-flex mx-2 mt-3">
-            <img src={OwnerPic} alt="" />
-            <p className="mx-3 mb-0 py-0">
-              Kanchana Taylor{" "}
-              <small className="d-block">Scheduling Administrator</small>
-            </p>
-          </div>
-          <div className="d-flex mx-2 mt-3">
-            <img src={OwnerPic} alt="" />
-            <p className="mx-3 mb-0 py-0">
-              Watson Miller{" "}
-              <small className="d-block">Scheduling Administrator</small>
-            </p>
-          </div>
-        </div>
-        <div className="col-8 mr-4 ml-2 p-3 brdr-r-5 brdr-g bg-white mb-5">
+        <div className="col-11 mr-4 ml-2 p-3 brdr-r-5 brdr-g bg-white mb-5 mx-auto">
           <div className="row mx-auto">
-            <div className="col-8 ml-1">
-              <p className="mb-0 py-0">
-                Watson Miller{" "}
-                <small className="d-block">joannafinch12@gmail.com</small>
-              </p>
+            <div className="col-10 ml-1">
+              <h4>Add New User</h4>
             </div>
-            <div className="col-3 ml-5 text-right">
-              <button
-                onClick={() => setShow(!show)}
-                className="bg-transparent border-0 outline-0"
-              >
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-              <div>
-                {show ? (
-                  <div className="bg-white rapdtu py-2 p-2 position-absolute rounded">
-                    <ul className="btn-peruser text-left px-0 my-0">
-                      <li>
-                        <small>Remove All Permissions</small>
-                      </li>
-                      <li>
-                        <small>Delete the User</small>
-                      </li>
-                    </ul>
+            <div className="col ml-5 text-right">
+              <Link to="/ManageUsers">
+                <button className="d-flex bg-gg border-0 outline-0 brdr-r-6 py-2 px-3">
+                  <div>
+                    <i class="fas fa-chevron-left font-grey"></i>
                   </div>
-                ) : null}
-              </div>
+                  <div className="px-2 font-grey pt-0 mt-0">Back</div>
+                </button>
+              </Link>
             </div>
-            <div className="col-3 mt-4 mx-1">
-              <button className="rounded btn-chng outline-0">
-                Change Password
-              </button>
+            <div className="col-8">
+              <label htmlFor="" className="mt-3">
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="yrnm"
+                placeholder="Your name"
+                className="iw py-2 brdr-r-2 px-2 brdr-g"
+              />
+              <label htmlFor="" className="mt-3">
+                Email Address
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="yrnm"
+                placeholder="Your email address"
+                className="iw py-2 brdr-r-2 px-2 brdr-g"
+              />
+              <label htmlFor="" className="mt-3">
+                Password
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="yrnm"
+                placeholder="Password"
+                className="iw py-2 brdr-r-2 px-2 brdr-g"
+              />
             </div>
             <div className="col-12 mx-auto mt-3 mx-1">GLOBAL</div>
-            <div className="col-12">
+            <div className="col-8">
               <div className="row mt-2">
                 <div className="col-11">
                   <p className="mb-0 py-0 mx-1">
@@ -115,10 +81,10 @@ const Main2 = () => {
                 <div className="col-1 mx-0 px-0">
                   <Switchbtn />
                 </div>
-                <hr className="mx-3 mt-2 hrww" />
+                <hr className="mx-3 mt-2 hrw" />
               </div>
             </div>
-            <div className="col-12">
+            <div className="col-8">
               <div className="row mt-2">
                 <div className="col-11">
                   <p className="mb-0 py-0 mx-1">
@@ -132,10 +98,10 @@ const Main2 = () => {
                 <div className="col-1 mx-0 px-0">
                   <Switchbtn />
                 </div>
-                <hr className="mx-3 mt-2 hrww" />
+                <hr className="mx-3 mt-2 hrw" />
               </div>
             </div>
-            <div className="col-12">
+            <div className="col-8">
               <div className="row mt-2">
                 <div className="col-11">
                   <p className="mb-0 py-0 mx-1">
@@ -160,19 +126,19 @@ const Main2 = () => {
                     </option>
                   </select>
                 </div>
-                <div className="my-3 mx-1 col-12">
+                <div className="my-3 mx-1">
                   <input type="checkbox" name="Allow" id="alw" />
                   <label className="px-2">
                     Allow user to export clients and appointments
                   </label>
                 </div>
-                <div className="mx-1 col-12">
+                <div className="mx-1">
                   <h6>Allow access to:</h6>
                   <a href="" className="text-black">
                     <u>What can users access?</u>
                   </a>
                 </div>
-                <div className="row mx-3 mt-3">
+                <div className="row mx-1 mt-3">
                   {hide1 ? (
                     <div className="col brdr-r-S brdr-r-2 bg-r mr-2">
                       <button
@@ -227,11 +193,11 @@ const Main2 = () => {
                   <div className="col brdr-r-G brdr-r-2 bg-g mx-2 evty font-green">
                     + Event type
                   </div>
-                  <hr className="mt-3 hrww" />
+                  <hr className="mt-3 hrw" />
                 </div>
               </div>
             </div>
-            <div className="col-12">
+            <div className="col-8">
               <div className="row mt-2">
                 <div className="col-11">
                   <p className="mb-0 py-0 mx-1">
@@ -241,7 +207,7 @@ const Main2 = () => {
                 <div className="col-1 mx-0 px-0">
                   <Switchbtn />
                 </div>
-                <div className="d-flex mx-1">
+                <div className="d-flex mx-3">
                   <p>Access Level</p>&nbsp;
                   <p className="text-danger">*</p>&nbsp;
                   <p>
@@ -322,11 +288,11 @@ const Main2 = () => {
                   <div className="col brdr-r-G brdr-r-2 bg-g mx-2 evty font-green">
                     + Email Campaign
                   </div>
-                  <hr className="mt-3 hrww" />
+                  <hr className="mt-3 mx-0 hrw" />
                 </div>
               </div>
             </div>
-            <div className="col-12">
+            <div className="col-8">
               <div className="row mt-2">
                 <div className="col-11">
                   <p className="mb-0 py-0 mx-1">Let this user manage chat </p>
@@ -334,7 +300,7 @@ const Main2 = () => {
                 <div className="col-1 mx-0 px-0">
                   <Switchbtn />
                 </div>
-                <div className="d-flex mx-1">
+                <div className="d-flex mx-3">
                   <p>Access Level</p>&nbsp;
                   <p className="text-danger">*</p>&nbsp;
                   <p>
@@ -348,7 +314,7 @@ const Main2 = () => {
                     </option>
                   </select>
                 </div>
-                <Link to="/ManageUsers/AddUsers">
+                <Link to="/ManageUsers/Upgradeaccount">
                   <button className="set-btn bg-green text-white col-2 px-3 py-2 mx-3 mt-3 mb-4">
                     Add User
                   </button>
@@ -358,8 +324,14 @@ const Main2 = () => {
           </div>
         </div>
       </div>
+      <div className="adst position-absolute">
+        <div className="col-5 mx-auto position-absolute bg-white adstcnt">
+            Add Seats
+            <small className="d-block">Prices are in USD</small>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Main2;
+export default Main5;

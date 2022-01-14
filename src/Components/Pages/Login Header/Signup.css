@@ -44,8 +44,21 @@
 }
 
 .heading1,
-.clr-green {
+.clr-green,
+.font-green {
   color: #2adc65;
+}
+
+.font-red {
+  color: #ff6633;
+}
+
+.font-blue {
+  color: #ff6633;
+}
+
+.font-grey {
+  color: #6c7a80;
 }
 
 .mt-10 {
@@ -267,7 +280,7 @@
   /* background-image: url("../../../Assets/Vector.png"); */
 }
 
-.form-check-input:checked[type=radio] {
+.form-check-input:checked[type="radio"] {
   background-image: url("../../../Assets/Vector.png");
 }
 

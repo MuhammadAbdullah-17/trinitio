@@ -15,7 +15,7 @@ const Signupnext3 = () => {
         <div className="mx-auto col-6 px-3 d-data mt-3 para1-signupnext3">
           If you do not receive the email at &nbsp;
           <a href="" className="sgnpnxt3-mail-lnk">
-            johndoe@gmail.com
+            shannii54321@gmail.com
           </a>
           &nbsp; within an hour, &nbsp;
           <a href="" onclick="myFunction()" className="sgnpnxt3-lnk">
