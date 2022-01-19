@@ -6,7 +6,7 @@ const Signupnext3 = () => {
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
-          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+          <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
         <div className="col-6 mt-5 mx-auto para-signupnext3">
           Before continuing, we need to verify your email address. Please check
