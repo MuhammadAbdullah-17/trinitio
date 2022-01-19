@@ -37,6 +37,23 @@
 
 /* Width in "vw" */
 
+.w-15vw {
+  width: 15vw;
+}
+.w-18vw {
+  width: 18vw;
+}
+.w-40vw {
+  width: 40vw;
+}
 .w-70 {
   width: 70vw;
+}
+
+.w-98vw {
+  width: 98vw !important;
+}
+
+.w-1000vw {
+  width: 1000vw;
 }
