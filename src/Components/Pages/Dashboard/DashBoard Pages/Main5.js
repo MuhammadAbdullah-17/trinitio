@@ -17,6 +17,17 @@ const Main5 = () => {
   const [hide4, setHide4] = useState(true);
   const [hide5, setHide5] = useState(true);
   const [hide6, setHide6] = useState(true);
+
+  const cdata = [
+    {
+      para:
+        "Adding 1 seat(s) will add $144 to your annual bill starting February 1, 2022.",
+    },
+    {
+      para:
+        "An estimated prorated charge of $64.16 will be applied today to your Visa ending in 1963.",
+    },
+  ];
   return (
     <div className="col-10 float-right bg-grey pgstup mx-auto">
       <div className="row mx-auto mt-5">
@@ -325,9 +336,36 @@ const Main5 = () => {
         </div>
       </div>
       <div className="adst position-absolute">
-        <div className="col-5 mx-auto position-absolute bg-white adstcnt">
-            Add Seats
-            <small className="d-block">Prices are in USD</small>
+        <div className="col-5 mx-auto px-3 py-3 brdr-r-2 position-absolute bg-lg adstcnt">
+          <h6>Add Seats</h6>
+          <small className="d-block">Prices are in USD</small>
+          <hr className="shrw mt-2" />
+          <div className="d-flex mt-5">
+            {/* <div className="col">Add</div> */}
+            <label for="quantity">Add</label>&nbsp; &nbsp;
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              className="brdr-r-gr brdr-r-1 py-1"
+            ></input>
+            &nbsp; &nbsp;
+            <label htmlFor="">seat(s)</label>
+          </div>
+          {cdata.map((i, index) => (
+            <React.Fragment>
+              <div className="col-11 mx-0 px-0 mt-3">{i.para}</div>
+            </React.Fragment>
+          ))}
+          <div className="font-green my-2">Change card</div>
+          <div className="d-flex mt-3">
+            <button className="set-btn px-3 col-3 py-2 bg-white">
+              Cancel
+            </button>
+            <button className="set-btn bg-green text-white col-3 px-3 py-2 mx-3">
+              Add Seats
+            </button>
+          </div>
         </div>
       </div>
     </div>
