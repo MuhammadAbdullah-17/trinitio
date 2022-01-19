@@ -7,7 +7,7 @@ const Singupnext = () => {
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
-          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+          <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
         <div className="himail mt-3">Hi johndoe@gmail.com!</div>
         <div className="box col-3 mx-auto mt-4 py-5">
