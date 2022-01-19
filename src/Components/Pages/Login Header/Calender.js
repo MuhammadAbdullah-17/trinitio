@@ -12,7 +12,7 @@ const Calender = () => {
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
-          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+          <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
         <div className="col-12 text-center mx-auto">
           <img src={GCalender} alt="" className="mb-0"/>
