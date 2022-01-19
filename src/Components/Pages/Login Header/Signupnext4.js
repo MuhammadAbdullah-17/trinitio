@@ -8,7 +8,7 @@ const Signupnext4 = () => {
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
-          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+          <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
         <div className="mt-5 name-men">John,</div>
         <div className="mx-auto col-4 d-data para1-signupnext4">
