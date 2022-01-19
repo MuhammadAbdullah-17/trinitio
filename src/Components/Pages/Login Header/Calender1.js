@@ -48,7 +48,7 @@ const Calender1 = () => {
               </div>
             </div>
           </div>
-          <hr className="col-12 my-0" />
+          <hr className="hrwl" />
           <div className="bg-white align-left px-4 py-4 box-btm">
             <div className="row mt-0">
               <div className="col-10 d-flex">
