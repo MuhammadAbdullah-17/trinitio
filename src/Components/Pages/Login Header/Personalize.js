@@ -9,7 +9,7 @@ const Personalize = () => {
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
-          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+          <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
         <div className="box-brdr col-4 mx-auto mt-5 px-0">
           <div className="box-b row mx-auto px-3 py-4">
