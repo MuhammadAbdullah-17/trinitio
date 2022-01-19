@@ -10,7 +10,7 @@ const Welcome = () => {
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
-          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+          <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
         <div className="box-brdr col-4 mx-auto mt-5 px-0">
           <div className="box-b row mx-auto px-3 py-4">
@@ -49,7 +49,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <hr className="col-12" />
+          <hr className="hrwl" />
           <div className="bg-white align-left px-5 py-4 box-btm">
             <label htmlFor="" className="wlcm-tm-zn">
               Time Zone
