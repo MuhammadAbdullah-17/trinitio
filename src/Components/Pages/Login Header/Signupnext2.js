@@ -7,7 +7,7 @@ const Signupnext2 = () => {
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
-          <img src={Logo} alt="" className="logoimg col-3 mx-auto" />
+          <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
         <div className="himail mt-3">Sign Up with Pagespeedy for free.</div>
         <div className="box col-3 mx-auto mt-4 py-5">
