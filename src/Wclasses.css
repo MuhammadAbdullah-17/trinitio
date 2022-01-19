@@ -1,0 +1,42 @@
+.w-60px {
+  width: 60px;
+}
+.w-84px {
+  width: 84px;
+}
+.w-94px {
+  width: 94px;
+}
+.w-100px {
+  width: 100px;
+}
+.w-114px {
+  width: 110px;
+}
+.w-140px {
+  width: 140px;
+}
+.w-150px {
+  width: 150px;
+}
+.w-200px {
+  width: 200px;
+}
+.w-205px {
+  width: 205px;
+}
+.w-230px {
+  width: 230px;
+}
+.w-300px {
+  width: 300px;
+}
+.w-400px {
+  width: 400px;
+}
+
+/* Width in "vw" */
+
+.w-70 {
+  width: 70vw;
+}
