@@ -6,6 +6,9 @@ import Main2 from "./DashBoard Pages/Main2";
 import Main3 from "./DashBoard Pages/Main3";
 import Main4 from "./DashBoard Pages/Main4";
 import Main5 from "./DashBoard Pages/Main5";
+import Email from "./DashBoard Pages/Emaildashboard";
+import EmailFollow from "./DashBoard Pages/EmailFollow";
+import EmailRecipients from "./DashBoard Pages/EmailRecipients";
 
 function Dashboard() {
   return (
@@ -18,6 +21,9 @@ function Dashboard() {
         <Route exact path="/ManageUsers/AddUsers" component={Main3} />
         <Route exact path="/ManageUsers/Upgradeaccount" component={Main4} />
         <Route exact path="/ManageUsers/AddSeats" component={Main5} />
+        <Route exact path="/Email/Dashboard" component={Email} />
+        <Route exact path="/Email/Dashboard/Follow" component={EmailFollow} />
+        <Route exact path="/Email/Dashboard/Recipients" component={EmailRecipients} />
       </Switch>
     </Router>
   );
