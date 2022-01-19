@@ -5,6 +5,9 @@
 .brdr-r-10 {
   border-radius: 10px;
 }
+.brdr-r-20 {
+  border-radius: 20px;
+}
 
 .txt-g {
   color: #858585;
@@ -357,5 +360,9 @@
 }
 
 .cdtl {
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.ifobg {
+  background-color: #F0F1F2 !important;
 }
