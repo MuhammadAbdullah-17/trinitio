@@ -275,6 +275,10 @@
   background-color: #fafafa;
 }
 
+.bg-orng {
+  background-color: #ff6040;
+}
+
 .evty {
   text-align: center;
   font-weight: 700;
@@ -364,7 +368,7 @@
 }
 
 .ifobg {
-  background-color: #F0F1F2 !important;
+  background-color: #f0f1f2 !important;
 }
 
 .emlpA {

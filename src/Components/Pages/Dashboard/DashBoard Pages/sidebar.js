@@ -81,7 +81,11 @@ const Sidebar = () => {
                       Dashboard
                     </CDBSidebarMenuItem>
                   </NavLink>
-                  <NavLink exact to="/u" activeClassName="activeClicked">
+                  <NavLink
+                    exact
+                    to="/Email/AddedEmail"
+                    activeClassName="activeClicked"
+                  >
                     <CDBSidebarMenuItem>
                       <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
                       Added ‘From’ Email Accounts
