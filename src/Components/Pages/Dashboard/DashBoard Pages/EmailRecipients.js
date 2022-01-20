@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import "../../../../Wclasses.css";
 import "../../../../Hclasses.css";
+import "../../../../Border.css";
 import Table from "react-bootstrap/Table";
-import { Link } from "react-router-dom";
-// import { TextField } from "@material-ui/core";s
+import Google from "../../../../Assets/Google.png";
+import Switchbtn from "./Switchbtn";
+import Timezone from "../../Login Header/TimeZone";
+import MailProvider from "./MailProvider";
 
 const EmailRecipients = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div className="col-10 float-right bg-grey pgstup mx-auto" id="follow">
       <div className="row mx-auto mt-5">
@@ -60,7 +65,7 @@ const EmailRecipients = () => {
               </div>
             </div>
           </div>
-          <div className="w-70 h-30 cdtl mx-3 brdr-r-2 mt-4">
+          <div className="w-70 h-30 cdtl brdr-grey mx-3 brdr-r-2 mt-4">
             <Table responsive className="w-98vw">
               <thead>
                 <tr className="bg-greyM">
@@ -189,19 +194,120 @@ const EmailRecipients = () => {
             NOT specify the same account in CC and/or BCC for accurate results
             in replay tracking.
           </div>
+
           <div className="col-7 mt-3">
             <div className="row">
               <div className="col mx-1">
-                  <h5 className="mt-2">From Email</h5>
+                <h5 className="mt-2">From Email</h5>
               </div>
               <div className="col text-right">
-                  <button className="border-0 brdr-r-20 bg-green text-white px-4 py-2 mx-3">
-                    + Add Email Campaign
-                  </button>
+                <Button
+                  onClick={() => setModalShow(true)}
+                  className="border-0 brdr-r-20 bg-green text-white px-4 py-2 mx-3"
+                >
+                  + Add Email Campaign
+                </Button>
+                <MailProvider
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
               </div>
             </div>
           </div>
-          <div className="col-7 mt-3 brdr-r-2 brdr-grey mx-3"></div>
+
+          {/* Email taken from email provider */}
+          <div className="col-7 mt-3 mx-3 px-0 py-0">
+            <div className="brdr-r-2 brdr-grey w-38vw">
+              <div className="bg-greyM px-2 py-2 brdr-r-LT-10 brdr-r-LB-10 my-0 emlpA position-absolute">
+                <img src={Google} alt="" className="" />
+              </div>
+              <div className="font-15 ml-5 py-2">
+                daniel.houtcomehealth@gmail.com
+              </div>
+            </div>
+          </div>
+
+          {/* These are switches to followup, open tracking, link tracking */}
+          <div className="col-7 d-flex mt-3">
+            <Switchbtn />
+            <div className="font-15 mx-2">
+              Send followup email in the same thread
+            </div>
+            <div>
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div className="col-7 d-flex mt-3">
+            <Switchbtn />
+            <div className="font-15 mx-2">Open tracking</div>
+          </div>
+          <div className="col-7 d-flex mt-3">
+            <Switchbtn />
+            <div className="font-15 mx-2">Link Tracking</div>
+          </div>
+
+          {/* Add Followup Stage Button */}
+          <div className="col-12 mx-auto">
+            <div className="row mx-auto">
+              <div className="col-12 bg-greyM brdr-r-2 brdr-grey py-3">
+                <button className="border-0 brdr-r-20 bg-green text-white px-4 py-2 mx-3">
+                  + Add Followup Stage
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Preference */}
+          <div className="col-12 mx-auto mt-3">
+            <div className="row mx-auto">
+              <div className="col-12 bg-greyM brdr-r-2 brdr-grey py-3">
+                <h6>Preference</h6>
+                <div className="row mt-3">
+                  <div className="col-3">
+                    <label htmlFor="" className="font-15 font-grey">
+                      Schedule Time
+                    </label>
+                    <input
+                      type="datetime-local"
+                      name="Schedule Time"
+                      id=""
+                      className="bg-greyL brdr-grey brdr-r-2 px-2 py-2 w-100 d-block"
+                    />
+                  </div>
+                  <div className="col-3">
+                    <label htmlFor="" className="font-15 font-grey">
+                      Timezone
+                    </label>
+                    <Timezone className="" />
+                  </div>
+                  <div className="col mx-auto">
+                    <div className="d-flex mt-4">
+                      <div className="mt-2 mx-2">
+                        Interval between two emails (in seconds)
+                      </div>
+                      <div className="brdr-r-2 brdr-grey bg-greyL p-2">60</div>
+                      <div className="mt-2 mx-2">to</div>
+                      <div className="brdr-r-2 brdr-grey bg-greyL p-2">90</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="my-3 mx-0 col-12">
+                  <input type="checkbox" name="Allow" id="alw" />
+                  <label className="px-2">
+                    I understand that sending campaign emails in a short time
+                    period means I may hit email provider’s sending rate limit.
+                    <a href="">Learn more</a>
+                  </label>
+                </div>
+                <button className="border-0 brdr-r-20 bg-green text-white px-4 py-2 ">
+                  Schedule Campaign
+                </button>
+                <button className="set-btn px-3 mx-3 py-2 bg-greyL">
+                  Save As Draft
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
