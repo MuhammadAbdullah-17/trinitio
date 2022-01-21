@@ -60,7 +60,7 @@ const Main3 = () => {
                 Password
               </label>
               <input
-                type="text"
+                type="password"
                 name="name"
                 id="yrnm"
                 placeholder="Password"

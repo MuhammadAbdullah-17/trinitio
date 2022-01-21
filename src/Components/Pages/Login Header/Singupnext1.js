@@ -9,7 +9,7 @@ const Singupnext = () => {
         <div className="mx-auto text-center">
           <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
-        <div className="himail mt-3">Hi johndoe@gmail.com!</div>
+        <div className="himail mt-3">Hi shannii54321@gmail.com!</div>
         <div className="box col-3 mx-auto mt-4 py-5">
           <div className="px-3">
             <p className="align-left font-w-100 mx-auto">

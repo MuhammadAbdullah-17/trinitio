@@ -251,6 +251,9 @@
 .brdr-r-G {
   border: 1px solid #aaf2c2;
 }
+.brdr-r-GG {
+  border: 2px solid #2adc65;
+}
 
 .bg-r {
   background-color: #fff5f2;
@@ -277,6 +280,10 @@
 
 .bg-orng {
   background-color: #ff6040;
+}
+
+.bg-rgk {
+  background-color: #e9f5ed;
 }
 
 .evty {
@@ -358,6 +365,9 @@
 .font-15 {
   font-size: 15px;
 }
+.font-13 {
+  font-size: 13px;
+}
 
 .w-15 {
   width: 6vw;
@@ -403,3 +413,11 @@
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
+
+/* Demo */
+
+.demo {
+  width: 100vw;
+  z-index: 999999;
+}
+

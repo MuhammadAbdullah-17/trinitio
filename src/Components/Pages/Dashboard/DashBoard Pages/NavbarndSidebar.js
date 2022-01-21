@@ -11,7 +11,6 @@ import { DropdownItem } from "react-bootstrap";
 import "../../Dashboard/Dashboard.css";
 import LogoW from "../../../../Assets/TrinitiologoW.png";
 import Profile from "../../../../Assets/profile.png";
-import Dashboard from "../../../../Assets/Dashboard.jpg";
 import Sidebar from "./sidebar";
 
 function MainDashboard() {

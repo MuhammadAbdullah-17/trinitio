@@ -14,7 +14,7 @@ const Signupnext4 = () => {
         <div className="mx-auto col-4 d-data para1-signupnext4">
           Thank you for confirming your email address, &nbsp;
           <a href="" className="sgnpnxt3-mail-lnk">
-            johndoe@gmail.com
+            shannii54321@gmail.com
           </a>
           &nbsp;
         </div>

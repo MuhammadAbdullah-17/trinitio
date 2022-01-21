@@ -235,7 +235,7 @@ const EmailAdded = () => {
                 <div className="col text-left font-grey font-15">
                   Displaying 1-11 of 540 Records
                 </div>
-                <div className="col-3 font-grey font-15">
+                <div className="col-3 text-right font-grey font-15">
                   <div className="d-flex">
                     <div className="">
                       <div className="brdr-grey rounded border-2 mx-1 px-1 w-100 h-75 text-center">

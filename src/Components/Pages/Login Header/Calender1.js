@@ -39,7 +39,7 @@ const Calender1 = () => {
                 </div>
                 <span className="mt-1 px-2 d-flex chck-email">
                   We’ll check &nbsp;
-                  <strong>“johndoe@gmail.com”</strong> &nbsp; for
+                  <strong>“shannii54321@gmail.com”</strong> &nbsp; for
                   conflicts
                 </span>
               </div>
@@ -57,7 +57,7 @@ const Calender1 = () => {
                 </div>
                 <span className="mt-1 px-2 d-flex chck-emai">
                   We'll add events to &nbsp;
-                  <strong className="">“johndoe@gmail.com”</strong>
+                  <strong className="">“shannii54321@gmail.com”</strong>
                 </span>
               </div>
               <div className="col align-right clr-green txt-bold mt-1">

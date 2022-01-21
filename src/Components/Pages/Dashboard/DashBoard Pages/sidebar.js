@@ -28,7 +28,7 @@ const Sidebar = () => {
             <NavLink exact to="/ManageUsers" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Manage Users</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/profile" activeClassName="activelist">
+            <NavLink exact to="/Appointment" activeClassName="activelist">
               <CDBSidebarMenuItem
                 icon="calendar"
                 onClick={() => setShow(!show)}
@@ -39,19 +39,27 @@ const Sidebar = () => {
             <CDBSidebarMenu>
               {show ? (
                 <div className="">
-                  <NavLink exact to="/profile" activeClassName="activeClicked">
+                  <NavLink
+                    exact
+                    to="/Appointment"
+                    activeClassName="activeClicked"
+                  >
                     <CDBSidebarMenuItem>
                       <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
                       Dashboard
                     </CDBSidebarMenuItem>
                   </NavLink>
-                  <NavLink exact to="/u" activeClassName="activeClicked">
+                  <NavLink
+                    exact
+                    to="/Integration"
+                    activeClassName="activeClicked"
+                  >
                     <CDBSidebarMenuItem>
                       <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
                       Integrations
                     </CDBSidebarMenuItem>
                   </NavLink>
-                  <NavLink exact to="/y" activeClassName="activeClicked">
+                  <NavLink exact to="" activeClassName="activeClicked">
                     <CDBSidebarMenuItem>
                       <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
                       Connect your Calendar
