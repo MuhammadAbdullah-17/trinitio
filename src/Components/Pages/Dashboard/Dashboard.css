@@ -112,6 +112,18 @@
   background-color: #fafafa;
 }
 
+.bg-bl {
+  background-color: #4086f4;
+}
+
+.bg-Lbl {
+  background-color: #f7faff;
+}
+
+.brdr-ggl {
+  border: 1px solid #ced2d9;
+}
+
 .brdr-r-5 {
   border-radius: 15px;
 }
@@ -286,6 +298,13 @@
   background-color: #e9f5ed;
 }
 
+.bg-Y {
+  background-color: #ffb900;
+}
+.bg-Sb {
+  background-color: #2196f3;
+}
+
 .evty {
   text-align: center;
   font-weight: 700;
@@ -414,10 +433,6 @@
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
 
-/* Demo */
-
-.demo {
-  width: 100vw;
-  z-index: 999999;
+.brdr-bl {
+  border: 1px solid #4086f4;
 }
-

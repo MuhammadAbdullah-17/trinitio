@@ -59,7 +59,7 @@ const Sidebar = () => {
                       Integrations
                     </CDBSidebarMenuItem>
                   </NavLink>
-                  <NavLink exact to="" activeClassName="activeClicked">
+                  <NavLink exact to="/Connect" activeClassName="activeClicked">
                     <CDBSidebarMenuItem>
                       <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
                       Connect your Calendar
