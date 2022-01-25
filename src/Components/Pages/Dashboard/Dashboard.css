@@ -263,6 +263,18 @@
 .brdr-r-G {
   border: 1px solid #aaf2c2;
 }
+.brdr-r-Pr {
+  border: 1px solid #c93f8d;
+}
+.brdr-r-W {
+  border: 1px solid transparent;
+}
+.brdr-r-Bl {
+  border: 1px solid #469696;
+}
+.brdr-r-Or {
+  border: 1px solid #ff5a4c;
+}
 .brdr-r-GG {
   border: 2px solid #2adc65;
 }
@@ -306,6 +318,12 @@
 }
 .bg-Sb {
   background-color: #2196f3;
+}
+.bg-Green {
+  background-color: #2adc65;
+}
+.bg-LGreen {
+  background-color: #dcf5dc;
 }
 
 .evty {
@@ -444,6 +462,26 @@
   right: 2%;
   top: 2%;
 }
+.chck-icn5 {
+  left: 73%;
+  top: -9%;
+}
+.chck-icn1 {
+  left: 59%;
+  top: -14%;
+}
+.chck-icn2 {
+  left: 41%;
+  top: -14%;
+}
+.chck-icn3 {
+  left: 22%;
+  top: -14%;
+}
+.chck-icn4 {
+  left: 5%;
+  top: -14%;
+}
 
 .dt-brdr {
   border: 1px dotted #ccc;
@@ -456,4 +494,17 @@
 .demo {
   z-index: 999;
   width: 100;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.chtm {
+  top: -29%;
+  left: 6%;
+}
+.chtmr {
+  top: -29%;
+  right: 6%;
 }

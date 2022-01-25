@@ -1,6 +1,10 @@
 .h-30 {
-    height: 35vh;
+  height: 35vh;
 }
 .h-30i {
-    height: 30vh;
+  height: 30vh;
+}
+
+.h-50 {
+  height: 50vh;
 }
