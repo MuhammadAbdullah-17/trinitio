@@ -12,6 +12,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   const [show, setShow] = useState(false);
   const [shown, setHide] = useState(false);
+  const [showc, setHidec] = useState(false);
   return (
     <div className="side-right" style={{ overflow: "scroll initial" }}>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
@@ -28,7 +29,7 @@ const Sidebar = () => {
             <NavLink exact to="/ManageUsers" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Manage Users</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Appointment" activeClassName="activelist">
+            <NavLink exact to="/Appointement" activeClassName="activelist">
               <CDBSidebarMenuItem
                 icon="calendar"
                 onClick={() => setShow(!show)}
@@ -41,7 +42,7 @@ const Sidebar = () => {
                 <div className="">
                   <NavLink
                     exact
-                    to="/Appointment"
+                    to="/Appointement"
                     activeClassName="activeClicked"
                   >
                     <CDBSidebarMenuItem>
@@ -102,16 +103,60 @@ const Sidebar = () => {
                 </div>
               ) : null}
             </CDBSidebarMenu>
-            <NavLink
-              exact
-              to="/hero404"
-              target="_blank"
-              activeClassName="activeClicked"
-            >
-              <CDBSidebarMenuItem icon="exclamation-circle">
-                404 page
+            <NavLink exact to="/ChatSetting" activeClassName="activelist">
+              <CDBSidebarMenuItem
+                icon="comment"
+                onClick={() => setHidec(!showc)}
+              >
+                Chat Support <i class="fas fa-chevron-right ml-4 pl-5"></i>
               </CDBSidebarMenuItem>
             </NavLink>
+            <CDBSidebarMenu>
+              {showc ? (
+                <div className="">
+                  <NavLink
+                    exact
+                    to="/ChatSetting"
+                    activeClassName="activeClicked"
+                  >
+                    <CDBSidebarMenuItem>
+                      <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
+                      Chat Settings
+                    </CDBSidebarMenuItem>
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/Email/AddedEmail"
+                    activeClassName="activeClicked"
+                  >
+                    <CDBSidebarMenuItem>
+                      <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
+                      Chat
+                    </CDBSidebarMenuItem>
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/Email/AddedEmail"
+                    activeClassName="activeClicked"
+                  >
+                    <CDBSidebarMenuItem>
+                      <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
+                      Chat History
+                    </CDBSidebarMenuItem>
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/Email/AddedEmail"
+                    activeClassName="activeClicked"
+                  >
+                    <CDBSidebarMenuItem>
+                      <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
+                      Chat Sentiment
+                    </CDBSidebarMenuItem>
+                  </NavLink>
+                </div>
+              ) : null}
+            </CDBSidebarMenu>
           </CDBSidebarMenu>
         </CDBSidebarContent>
 

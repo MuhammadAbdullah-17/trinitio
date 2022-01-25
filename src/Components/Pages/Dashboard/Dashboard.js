@@ -12,6 +12,7 @@ import EmailRecipients from "./DashBoard Pages/EmailRecipients";
 import EmailAdded from "./DashBoard Pages/AddedEmail";
 import Integration from "./DashBoard Pages/Appointment/Integration";
 import Connect from "./DashBoard Pages/Appointment/Connect";
+import ChatSetting from "./DashBoard Pages/Chat Support/ChatSettings";
 
 function Dashboard() {
   return (
@@ -34,6 +35,7 @@ function Dashboard() {
         <Route exact path="/Email/AddedEmail" component={EmailAdded} />
         <Route exact path="/Integration" component={Integration} />
         <Route exact path="/Connect" component={Connect} />
+        <Route exact path="/ChatSetting" component={ChatSetting} />
       </Switch>
     </Router>
   );

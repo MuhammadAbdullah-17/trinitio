@@ -289,6 +289,9 @@
 .bg-lg {
   background-color: #fafafa;
 }
+.bg-gg {
+  background-color: #f7f9fa;
+}
 
 .bg-orng {
   background-color: #ff6040;
@@ -435,4 +438,22 @@
 
 .brdr-bl {
   border: 1px solid #4086f4;
+}
+
+.chck-icn {
+  right: 2%;
+  top: 2%;
+}
+
+.dt-brdr {
+  border: 1px dotted #ccc;
+}
+
+.clr-btn {
+  border-radius: 30px;
+}
+
+.demo {
+  z-index: 999;
+  width: 100;
 }

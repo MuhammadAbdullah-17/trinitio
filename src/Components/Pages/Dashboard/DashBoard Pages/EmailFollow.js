@@ -151,10 +151,18 @@ const EmailFollow = () => {
               </div>
             </div>
             <div className="col-3 text-left font-weight-bold">Status</div>
-            <div className="col font-weight-bold mx-auto text-center">Opened</div>
-            <div className="col font-weight-bold mx-auto text-center">Clicked</div>
-            <div className="col font-weight-bold mx-auto text-center">Unsubscribed</div>
-            <div className="col font-weight-bold mx-auto text-center">Action</div>
+            <div className="col font-weight-bold mx-auto text-center">
+              Opened
+            </div>
+            <div className="col font-weight-bold mx-auto text-center">
+              Clicked
+            </div>
+            <div className="col font-weight-bold mx-auto text-center">
+              Unsubscribed
+            </div>
+            <div className="col font-weight-bold mx-auto text-center">
+              Action
+            </div>
           </div>
           <hr className="mt-3 mx-3" />
           <div className="row mx-auto">
@@ -177,7 +185,7 @@ const EmailFollow = () => {
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">
-            <i class="fas fa-envelope font-orange pt-2"></i>
+              <i class="fas fa-envelope font-orange pt-2"></i>
             </div>
           </div>
           <hr className="mt-3 mx-3" />
@@ -201,7 +209,7 @@ const EmailFollow = () => {
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">
-            <i class="fas fa-envelope font-orange pt-2"></i>
+              <i class="fas fa-envelope font-orange pt-2"></i>
             </div>
           </div>
           <hr className="mt-3 mx-3" />
@@ -225,7 +233,7 @@ const EmailFollow = () => {
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">
-            <i class="fas fa-envelope font-orange pt-2"></i>
+              <i class="fas fa-envelope font-orange pt-2"></i>
             </div>
           </div>
           <hr className="mt-3 mx-3" />
@@ -249,7 +257,7 @@ const EmailFollow = () => {
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">-</div>
             <div className="col mx-auto text-center pt-2">
-            <i class="fas fa-envelope font-orange pt-2"></i>
+              <i class="fas fa-envelope font-orange pt-2"></i>
             </div>
           </div>
           <hr className="mt-3 mx-3" />

@@ -359,9 +359,7 @@ const Main5 = () => {
           ))}
           <div className="font-green my-2">Change card</div>
           <div className="d-flex mt-3">
-            <button className="set-btn px-3 col-3 py-2 bg-white">
-              Cancel
-            </button>
+            <button className="set-btn px-3 col-3 py-2 bg-white">Cancel</button>
             <button className="set-btn bg-green text-white col-3 px-3 py-2 mx-3">
               Add Seats
             </button>
