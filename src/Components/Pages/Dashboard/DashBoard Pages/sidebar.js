@@ -124,11 +124,7 @@ const Sidebar = () => {
                       Chat Settings
                     </CDBSidebarMenuItem>
                   </NavLink>
-                  <NavLink
-                    exact
-                    to="/Email/AddedEmail"
-                    activeClassName="activeClicked"
-                  >
+                  <NavLink exact to="/Chat" activeClassName="activeClicked">
                     <CDBSidebarMenuItem>
                       <i class="fas fa-chevron-right txt-sdbr mx-2"></i>
                       Chat
@@ -136,7 +132,7 @@ const Sidebar = () => {
                   </NavLink>
                   <NavLink
                     exact
-                    to="/Email/AddedEmail"
+                    to="/ChatHistory"
                     activeClassName="activeClicked"
                   >
                     <CDBSidebarMenuItem>
@@ -146,7 +142,7 @@ const Sidebar = () => {
                   </NavLink>
                   <NavLink
                     exact
-                    to="/Email/AddedEmail"
+                    to="/ChatSentiment"
                     activeClassName="activeClicked"
                   >
                     <CDBSidebarMenuItem>
