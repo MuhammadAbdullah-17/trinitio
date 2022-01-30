@@ -13,6 +13,9 @@ import EmailAdded from "./DashBoard Pages/AddedEmail";
 import Integration from "./DashBoard Pages/Appointment/Integration";
 import Connect from "./DashBoard Pages/Appointment/Connect";
 import ChatSetting from "./DashBoard Pages/Chat Support/ChatSettings";
+import Chat from "./DashBoard Pages/Chat Support/Chat";
+import ChatHistory from "./DashBoard Pages/Chat Support/ChatHistory";
+import ChatSentiment from "./DashBoard Pages/Chat Support/ChatSentiment";
 
 function Dashboard() {
   return (
@@ -36,6 +39,9 @@ function Dashboard() {
         <Route exact path="/Integration" component={Integration} />
         <Route exact path="/Connect" component={Connect} />
         <Route exact path="/ChatSetting" component={ChatSetting} />
+        <Route exact path="/Chat" component={Chat} />
+        <Route exact path="/ChatHistory" component={ChatHistory} />
+        <Route exact path="/ChatSentiment" component={ChatSentiment} />
       </Switch>
     </Router>
   );
