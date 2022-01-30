@@ -8,6 +8,9 @@
 .brdr-r-20 {
   border-radius: 20px;
 }
+.brdr-r-30 {
+  border-radius: 30px;
+}
 
 .txt-g {
   color: #858585;
@@ -507,4 +510,25 @@
 .chtmr {
   top: -29%;
   right: 6%;
+}
+
+.font-10 {
+  font-size: 11px;
+}
+.font-13 {
+  font-size: 13px;
+}
+
+.cnmt {
+  top: -55%;
+  right: 0%;
+}
+.cnmtL {
+  top: -55%;
+  left: 1%;
+}
+
+.txtp {
+  bottom: 0%;
+  margin-bottom: 1.5%;
 }
