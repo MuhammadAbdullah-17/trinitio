@@ -29,7 +29,7 @@ const Sidebar = () => {
             <NavLink exact to="/ManageUsers" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Manage Users</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Appointement" activeClassName="activelist">
+            <NavLink exact to="/Appointment" activeClassName="activelist">
               <CDBSidebarMenuItem
                 icon="calendar"
                 onClick={() => setShow(!show)}
@@ -42,7 +42,7 @@ const Sidebar = () => {
                 <div className="">
                   <NavLink
                     exact
-                    to="/Appointement"
+                    to="/Appointment"
                     activeClassName="activeClicked"
                   >
                     <CDBSidebarMenuItem>

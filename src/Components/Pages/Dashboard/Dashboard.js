@@ -10,6 +10,7 @@ import Email from "./DashBoard Pages/Emaildashboard";
 import EmailFollow from "./DashBoard Pages/EmailFollow";
 import EmailRecipients from "./DashBoard Pages/EmailRecipients";
 import EmailAdded from "./DashBoard Pages/AddedEmail";
+import DashboardApp from "./DashBoard Pages/Appointment/DashboardApp";
 import Integration from "./DashBoard Pages/Appointment/Integration";
 import Connect from "./DashBoard Pages/Appointment/Connect";
 import ChatSetting from "./DashBoard Pages/Chat Support/ChatSettings";
@@ -28,6 +29,7 @@ function Dashboard() {
         <Route exact path="/ManageUsers/AddUsers" component={Main3} />
         <Route exact path="/ManageUsers/Upgradeaccount" component={Main4} />
         <Route exact path="/ManageUsers/AddSeats" component={Main5} />
+        <Route exact path="/Appointment" component={DashboardApp} />
         <Route exact path="/Email/Dashboard" component={Email} />
         <Route exact path="/Email/Dashboard/Follow" component={EmailFollow} />
         <Route

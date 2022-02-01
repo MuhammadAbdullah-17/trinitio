@@ -1,0 +1,172 @@
+.box1p {
+  color: #2adc65;
+}
+.innerBox img {
+  border-radius: 20%;
+}
+.box1 {
+  background: #ffffff;
+  border: 1px solid #ebeef0;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.box2 img {
+  border-radius: 20px;
+}
+input {
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid grey;
+  box-shadow: none;
+}
+.navBtn {
+  background-color: #2adc65;
+  width: 220px;
+  height: 50px;
+  color: white;
+}
+.SEdiv {
+  background: #ffffff;
+  border: 1px solid #ebeef0;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.SEbtns {
+  background: #eefaf2;
+  border-radius: 6px;
+}
+.SEbtns2 {
+  background: #ffffff;
+  border: 1px solid #c2c9cc;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.SEbtn3 {
+  color: #2adc65;
+  background: #e9f5ed;
+  border: 1px solid #2adc65;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.SEp {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #3d484d;
+}
+.SEdd {
+  border: 1px solid #c2c9cc;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.SEdd:focus {
+  text-decoration: none;
+  border: none;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.SEschedules {
+  border: 1px solid #ff6633;
+  border-radius: 10px;
+}
+.SEbtn5 {
+  background: #ffffff;
+  border: 1px solid #c2c9cc;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #43bf43;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #43bf43;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(28px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.ATcards {
+  border: 1px solid #ff6633;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.ATbtn {
+  border: none;
+}
+
+.brdr-card {
+  border: 1px solid #ccc;
+}
+
+.usrdrpdwn {
+  box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.usrdrpdwnt:hover {
+  background-color: #e9f5ed;
+  color: #2adc65;
+}
+
+.appusrLNK:hover {
+  color: #2adc65;
+}
