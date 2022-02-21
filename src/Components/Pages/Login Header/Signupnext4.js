@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../../Assets/Logo1.png";
+import Logo from "../../../Assets/Logo1.svg";
 import "../Login Header/Signup.css";
 
 const Signupnext4 = () => {
@@ -13,7 +13,7 @@ const Signupnext4 = () => {
         <div className="mt-5 name-men">John,</div>
         <div className="mx-auto col-4 d-data para1-signupnext4">
           Thank you for confirming your email address, &nbsp;
-          <a href="" className="sgnpnxt3-mail-lnk">
+          <a href="/" className="sgnpnxt3-mail-lnk fs-5">
             shannii54321@gmail.com
           </a>
           &nbsp;
@@ -22,7 +22,7 @@ const Signupnext4 = () => {
           Let's log in and finish getting your started!
         </div>
         <div className="mx-auto col-4 d-data mt-0 para1-signupnext4">
-          <a href="" className="sgnpnxt4-lnk">
+          <a href="/" className="sgnpnxt4-lnk">
             (This is not me)
           </a>
         </div>
@@ -50,13 +50,13 @@ const Signupnext4 = () => {
         </div>
         <div className="mx-auto col-3 px-3 d-data mt-3">
           I forget my password. &nbsp;
-          <a href="" className="click-link">
+          <a href="/" className="click-link">
             Please send me a recovery email.
           </a>
         </div>
         <div className="mx-auto col-3 px-3 d-data mt-3">
           Don't have an account? &nbsp;
-          <a href="" className="click-link">
+          <a href="/" className="click-link">
             Sign Up.
           </a>
         </div>

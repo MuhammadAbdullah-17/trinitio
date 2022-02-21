@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../../../Assets/Logo1.png";
-import WelcomeImg from "../../../Assets/welcome-back1.png";
+import Logo from "../../../Assets/Logo1.svg";
+import WelcomeImg from "../../../Assets/welcome-back1.svg";
 import Timezone from "./TimeZone.jsx";
-import Points from "../../../Assets/Group538.png";
+import Points from "../../../Assets/Group 538.svg";
 import { Link } from "react-router-dom";
 
 const Welcome = () => {
@@ -14,7 +14,7 @@ const Welcome = () => {
         </div>
         <div className="box-brdr col-4 mx-auto mt-5 px-0">
           <div className="box-b row mx-auto px-3 py-4">
-            <div className="col-2">
+            <div className="col-2 me-4">
               <img src={WelcomeImg} alt="" />
             </div>
             <div className="col align-left">
@@ -63,8 +63,8 @@ const Welcome = () => {
             <div className="col-3">
               <img src={Points} alt="" />
             </div>
-            <div className="col align-right">
-              <a href="">
+            <div className="col align-right mb-5">
+              <a href="/">
                 <button className="set-btn px-3 col-5 py-2 bg-white">
                   Set Up Later
                 </button>

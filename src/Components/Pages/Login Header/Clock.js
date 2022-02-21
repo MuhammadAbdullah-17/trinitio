@@ -12,7 +12,7 @@ const Clock = () => {
         <div className="mx-auto text-center">
           <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
-        <div className="box-brdr col-4 mx-auto mt-5 px-0">
+        <div className="box-brdr col-5 mx-auto mt-5 px-0">
           <div className="box-b row mx-auto px-3 py-4">
             <div className="col-2 mt-1">
               <img src={ClockImg} alt="" />
@@ -49,19 +49,19 @@ const Clock = () => {
             later on.
           </div>
         </div>
-        <div className="col-4 mx-auto mt-5">
+        <div className="col-5 mb-5 mx-auto mt-5">
           <div className="row">
             <div className="col-3 mt-2">
               <img src={Points} alt="" />
             </div>
             <div className="col align-right">
-              <a href="">
+              <a href="/">
                 <button className="set-btn px-3 col-5 py-2 bg-white">
                   Set Up Later
                 </button>
               </a>
               <Link to="/Personalize">
-                <button className="set-btn bg-green text-white col-4 px-3 py-2 mx-3">
+                <button className="set-btn bg-green text-white col-4 px-3 py-2 ml-4">
                   Continue
                 </button>
               </Link>

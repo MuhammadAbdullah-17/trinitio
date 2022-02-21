@@ -1,31 +1,21 @@
-import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Routes,
-} from "react-router-dom";
-import Logo from "../../../Assets/Logo.png";
+import React from "react";
+import { Link, useParams } from "react-router-dom";
+import Logo from "../../../Assets/logo.svg";
 import "./Signup.css";
 import Bggroup from "../../../Assets/Group 47.png";
-import Bgshade from "../../../Assets/Signupbg.png";
-import Bgimage from "../../../Assets/Signupimg.png";
-import { useHistory } from "react-router";
-import { render } from "@testing-library/react";
-import Email from "./InputEmail";
+import Bgshade from "../../../Assets/Signupbg.svg";
+import Bgimage from "../../../Assets/Signupimg.svg";
+//import { useState } from "react";
+
 
 function SignUp() {
-  // const handleSubmit = (data) => {
-  //   const json = JSON.stringify(data, null, 4);
-  //   console.clear();
-  //   console.log(json);
-  // };
+  //const [email, setEmail] = useState("")
+ 
   return (
     <>
       <div className="header mx-auto box-shadow">
         <div className="container p-4 align-left">
-          <img src={Logo} className="col-2" />
+          <img src={Logo} className="col-2" alt="" />
         </div>
       </div>
       <div className="container align-left">
@@ -38,21 +28,21 @@ function SignUp() {
             upgrade to the plan that best fits your scheduling needs.
           </p>
           <div className="mt-5">
-            {/* <Email /> */}
             <input
               type="email"
               name="email"
+              //value={setEmail}
               placeholder="Enter your email"
               className="input1 px-3 py-3 w-100"
               required={true}
             />
-            <Link to="/Signup"
+            <Link
+              to="/Signup"
               // onSubmit={handleSubmit}
               className="btn-r px-4 py-3 signup-btn text-white position-absolute btn-p"
             >
               Sign UP
             </Link>
-            {/* <Link to={Singupnext} className="position-absolute btn-p"></Link> */}
           </div>
           <div className="d-flex mt-2 para">
             Already have a Pagespeedy account? &nbsp;
@@ -72,7 +62,7 @@ function SignUp() {
             information please see our Privacy Policy.
           </div>
           <div className="col-2 mt-4 align-right">
-            <a href="" className="border-dot clr-green">
+            <a href="/" className="border-dot clr-green">
               Cookie Settings
             </a>
           </div>

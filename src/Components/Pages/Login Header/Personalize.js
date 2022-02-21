@@ -11,7 +11,7 @@ const Personalize = () => {
         <div className="mx-auto text-center">
           <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
-        <div className="box-brdr col-4 mx-auto mt-5 px-0">
+        <div className="box-brdr col-5 mx-auto mt-5 px-0">
           <div className="box-b row mx-auto px-3 py-4">
             <div className="col-2 mt-1">
               <img src={ClockImg} alt="" />
@@ -115,7 +115,7 @@ const Personalize = () => {
             </div>
           </div>
         </div>
-        <div className="col-4 mx-auto mt-5">
+        <div className="col-5 mb-5 mx-auto mt-5">
           <div className="row">
             <div className="col-3 mt-2">
               <img src={Points} alt="" />

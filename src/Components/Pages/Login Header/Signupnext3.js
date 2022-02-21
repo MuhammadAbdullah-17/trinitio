@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../Assets/Logo1.png";
+import Logo from "../../../Assets/Logo1.svg";
 
 const Signupnext3 = () => {
   return (
@@ -14,11 +14,11 @@ const Signupnext3 = () => {
         </div>
         <div className="mx-auto col-6 px-3 d-data mt-3 para1-signupnext3">
           If you do not receive the email at &nbsp;
-          <a href="" className="sgnpnxt3-mail-lnk">
+          <a href="/" className="sgnpnxt3-mail-lnk">
             shannii54321@gmail.com
           </a>
           &nbsp; within an hour, &nbsp;
-          <a href="" onclick="myFunction()" className="sgnpnxt3-lnk">
+          <a href="/" onclick="myFunction()" className="sgnpnxt3-lnk">
             we can resend it to you.
           </a>
           <script>

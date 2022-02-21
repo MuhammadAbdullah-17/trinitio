@@ -1,15 +1,16 @@
 import React from "react";
-import Logo from "../../../Assets/Logo1.png";
-import { Link } from "react-router-dom";
+import Logo from "../../../Assets/Logo1.svg";
+import { Link, useParams } from "react-router-dom";
 
 const Singupnext = () => {
+  const { email } = useParams();
   return (
     <div className="mx-auto">
       <div className="mt-7">
         <div className="mx-auto text-center">
           <img src={Logo} alt="" className="logoimg mx-auto" />
         </div>
-        <div className="himail mt-3">Hi shannii54321@gmail.com!</div>
+        <div className="himail mt-3">Hi {email}</div>
         <div className="box col-3 mx-auto mt-4 py-5">
           <div className="px-3">
             <p className="align-left font-w-100 mx-auto">
@@ -42,11 +43,11 @@ const Singupnext = () => {
         </div>
         <div className="mx-auto col-3 px-3 d-data mt-3">
           By creting a Pagespeedy account, you agree to &nbsp;
-          <a href="" className="click-link">
+          <a href="/" className="click-link">
             Pagespeedy’s Term
           </a>
           &nbsp; and &nbsp;
-          <a href="" className="click-link">
+          <a href="/" className="click-link">
             Privacy Policy
           </a>
         </div>

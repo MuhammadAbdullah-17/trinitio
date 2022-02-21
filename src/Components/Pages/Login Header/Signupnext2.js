@@ -1,8 +1,29 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../../Assets/Logo1.png";
+import Logo from "../../../Assets/Logo1.svg";
 
 const Signupnext2 = () => {
+  const [email, setEmail] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [password, setPassword] = useState("");
+
+  async function submit() {
+    let item = { email, fullname, password };
+    let result = await fetch("http://localhost:3000/api/register", {
+      method: "POST",
+      mode: 'no-cors',
+      redirect:"follow",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(item)
+    });
+    result = await result.json();
+    console.log("result");
+    localStorage.setItem("user-info", JSON.stringify(result));
+  }
   return (
     <div className="mx-auto">
       <div className="mt-7">
@@ -17,6 +38,8 @@ const Signupnext2 = () => {
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="johndoe@gmail.com"
                 className="col-12 px-3 py-2 mt-2 mx-auto signup-frm-input"
               />
@@ -26,6 +49,8 @@ const Signupnext2 = () => {
               <input
                 type="text"
                 name="full name"
+                value={fullname}
+                onChange={(e) => setFullname(e.target.value)}
                 placeholder="John Doe"
                 className="col-12 px-3 py-2 mt-2 mx-auto signup-frm-input"
                 required
@@ -36,11 +61,14 @@ const Signupnext2 = () => {
               <input
                 type="password"
                 name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
                 className="col-12 px-3 py-2 mt-2 mx-auto signup-frm-input"
               />
+              
               <Link to="/Signupnext3">
-                <button className="btn-r col-12 mt-5 py-3 g-btn">
+              <button onClick={submit} className="btn-r col-12 mt-5 py-3 g-btn">
                   Continue
                 </button>
               </Link>
@@ -48,12 +76,12 @@ const Signupnext2 = () => {
           </div>
         </div>
         <div className="mx-auto col-3 px-3 d-data mt-3">
-          By creting a Pagespeedy account, you agree to &nbsp;
-          <a href="" className="click-link">
+          By creating a Pagespeedy account, you agree to &nbsp;
+          <a href="/" className="click-link">
             Pagespeedy’s Term
           </a>
           &nbsp; and &nbsp;
-          <a href="" className="click-link">
+          <a href="/" className="click-link">
             Privacy Policy
           </a>
         </div>
